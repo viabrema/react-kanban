@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import kambanReducer from "../kamban/kambanSlice";
+import kanbanReducer from "../kanban/kanbanSlice";
 
 export const store = configureStore({
   reducer: {
-      kamban: kambanReducer
+      kanban: kanbanReducer
   },
 })
