@@ -14,9 +14,9 @@ Um componente de kanban com drag and drop fácil de aplicar em qualquer projeto 
 *   Utiliza Redux
 *   Utiliza styled components
 
-### Demo -> Show me what you got
+<!-- ### Demo -> Show me what you got
 
-[Link to your awesome Demo](#) 
+[Link to your awesome Demo](#)  -->
 
 
 ### Download & Installation
