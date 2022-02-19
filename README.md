@@ -1,47 +1,35 @@
 React Kanban 
 =======================================
 
-Intro - A Simple Kanban in React :books:
+Intro - Um simples componente de kanban :books:
 
 * * *
 
-Describe you project -> I hate to always "reinvent" README.md on GitHub that is why I decided to make this Starter README.md template. Also I prefer HTML syntax because I use HTML every day and it has some extra features like center the elements.
+Um componente de kanban com drag and drop fácil de aplicar em qualquer projeto react, ideal para organização de tarefas, planejamento de projetos e funil de vendas. :chart_with_downwards_trend:
 
-### List of features
+### Funcionalidades
 
-*   Beautiful Starter Template for README.md
-*   Key feature num. 2
-*   Key feature num. 3
-*   Key feature num. 4
+*   Configuração de boards via JSON
+*   Criação e pesquisa de novos cartões
+*   Utiliza Redux
+*   Utiliza styled components
 
 ### Demo -> Show me what you got
 
 [Link to your awesome Demo](#) 
 
-[Another Link to your awesome Demo](#)
-
-### Code Demo
-
-```html We will use markdown for the Syntax Highlighting
-<li>Beautiful Starter Template for README.md</li>
-<li>Key feature num. 2</li>
-<li>Key feature num. 3</li>
-<li>Key feature num. 4</li>
-```
 
 ### Download & Installation
 
 ```shell 
-$ npm i boilerplate-readme-template 
+$ npm install
+$ npm run start
 ```
 
-### Contributing
 
-Keep it simple. Keep it minimal. Don't put every single feature just because you can.
+### Autor
 
-### Authors or Acknowledgments
-
-*   Vladimir Carrer
+*   Vitor Abreu
 
 ### License
 
