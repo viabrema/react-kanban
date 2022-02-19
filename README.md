@@ -1,9 +1,7 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-
-React Kanban <i class="devicon-react-original"></i>
+React Kanban 
 =======================================
 
-Intro - A Simple Kanban in React
+Intro - A Simple Kanban in React :books:
 
 * * *
 
