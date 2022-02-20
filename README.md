@@ -11,6 +11,7 @@ Um componente de kanban com drag and drop fácil de aplicar em qualquer projeto 
 
 *   Configuração de boards via JSON
 *   Criação e pesquisa de novos cartões
+*   Cartões com 'drag and drop' nativo
 *   Utiliza Redux
 *   Utiliza styled components
 

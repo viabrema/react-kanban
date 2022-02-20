@@ -1,8 +1,18 @@
-import { Container } from './styled';
+import { Container, Title, Description, ContentUsers, UserAvatar } from './CardStyled';
+import { useSelector } from 'react-redux';
 
-export default function Card({ children}) {
+export default function Card({ children, id }) {
 
-    function drop(e) {
+
+    const { name, description, users: cardUsers } = useSelector(state => state.kanban.cards.find((card) => card.id === id));
+
+    const users = useSelector(state => state.kanban.users);
+
+    function getUser(id) {
+        return users.find(user => user.id === id);
+    }
+
+    function dropCard(e) {
         e.preventDefault();
         console.log(e);
     }
@@ -27,10 +37,23 @@ export default function Card({ children}) {
             draggable
             onDragStart={e => dragStart(e)}
             onDragEnd={e => dragEnd(e)}
-            onDrop={e => drop(e)}
+            onDrop={e => dropCard(e)}
             onDragOver={e => dragOver(e)}
         >
-            {children}
+            <Title>{name}</Title>
+            <Description>{description}</Description>
+            <ContentUsers>
+                {
+                    cardUsers.map(user =>
+                        <UserAvatar aria-label={getUser(user).name}>
+                            <img
+                                key={user}
+                                src="https://cactusthemes.com/blog/wp-content/uploads/2018/01/tt_avatar_small.jpg"
+                                alt={`avatar do usuário ${getUser(user).name}`} />
+                        </UserAvatar>)
+                }
+
+            </ContentUsers>
         </Container>
     )
 }

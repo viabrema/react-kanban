@@ -1,4 +1,4 @@
-import { Container } from './styled';
+import { Container } from './FrameStyled';
 
 export default function Frame({ children, name }) {
     return (

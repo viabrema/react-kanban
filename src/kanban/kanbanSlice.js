@@ -46,7 +46,7 @@ const initialState = {
             users: [1]
         },
         {
-            id: 2,
+            id: 3,
             name: "Tarefa 3",
             description: "Essa é mais uma Tarefa em desenvolvimento",
             frame: 2,
@@ -59,14 +59,8 @@ export const kanbanSlice = createSlice({
     name: 'kanban',
     initialState,
     reducers: {
-        increment: (state) => {
-            state.value += 1
-        },
-        decrement: (state) => {
-            state.value -= 1
-        },
-        incrementByAmount: (state, action) => {
-            state.value += action.payload
+        createCard: (state, action) => {
+            // create a new card
         },
     },
 })
